@@ -199,4 +199,4 @@ server <- function(input, output) {
   
 }
 
-shinyApp(ui, server)
+shinyApp(ui, server, options=list("host"="0.0.0.0", port=4721))
