@@ -42,7 +42,7 @@ yearly_electricity_expenses <- electricity_expenses %>%
 
 number_of_months_collected_for_2020 <- 8
 avg_2020_monthly_electricity_expense <- sum( dplyr::filter(electricity_expenses, year == 2020)$amount ) / number_of_months_collected_for_2020
-estimated_2020_expected_electricity_expense <- avg_2020_electricity_expense*12
+estimated_2020_expected_electricity_expense <- avg_2020_monthly_electricity_expense*12
 estimated_2022_electricity_expense <- sum( dplyr::filter(electricity_expenses, year == 2022)$amount ) - estimated_2020_expected_electricity_expense
 
 
